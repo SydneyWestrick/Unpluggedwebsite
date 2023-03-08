@@ -345,6 +345,77 @@ aside {
     width: 100%;
 }
 
+/*--------------------- Desktop style- Home --------------------------*/
+
+@media only screen and (min-width: 1200px){
+
+}
+  
+header .content-wrapper{
+    max-width: 960px;
+    margin: 15px 0;
+
+}
+
+/* hero */
+
+.hero-area h1{
+    width: 70%;
+}
+/* Aside */
+aside .content-wrapper{
+  justify-content: space-around;
+
+}
+aside .content-wrapper .form-description{
+ width: 30%;
+}
+aside .content-wrapper .form{
+    width:30%;
+}
+
+/* features */
+
+.features h2 {
+    width: 90%;
+}
+
+.features article{
+    flex-basis: 33%;
+}
+
+/* Reviews */
+
+.reviews h3 {
+    width: 80%;
+}
+
+.reveiws article div {
+    width: 50%;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.mission  h2,
+.content-section .content-wrapper h2{
+    width: 95%;
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+ .faq h2{
+    width: 100%;
+ }
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
