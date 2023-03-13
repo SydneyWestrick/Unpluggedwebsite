@@ -122,7 +122,8 @@ a{
 h2{
 
     font-family: 'Poppins', sans-serif;
-    font-size: 1.875em;
+    color: #202322;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -131,6 +132,7 @@ font-family: 'Poppins', sans-serif;
 font-size: 1.12em;
 line-height: 24px;
 margin: 20px 0;
+font-weight: 500;
 }
 
 p{
@@ -164,6 +166,7 @@ address{
     justify-content: center;
     align-item: center;
     flex-flow: row wrap;
+    background-color: #202322;
    }
 
    header{
@@ -184,6 +187,7 @@ address{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    
    }
 
    header nav{
@@ -192,15 +196,25 @@ address{
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
    }
 
    .header-divider{
     width: 100%;
    height: 1px;
    margin: 10px 0 20px 0;
+   background: #3a3a3a;
    }
 
+   header nav ul li{
+    font-size: 1.125em;
+   }
+
+
    footer{
+    text-align: center;
     flex-direction: column;
    }
 
@@ -211,7 +225,7 @@ address{
 
    footer .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
    }
 
@@ -231,18 +245,55 @@ address{
 
 /* -------------------------Mobile Styles- Homepage---------------------*/
 
+/* hero area */ 
+
+.hero-area h1{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+}
 .hero-area{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
 }
+
+/* Aside */
 
 aside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
+
+aside .form{
+    margin-top: 30px; 
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+}
+input [type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* features */
 
 .features {
     display: flex;
@@ -267,12 +318,14 @@ aside {
     margin:0;
 }
 
+/* Reviews */
 
 .reviews {
     display: flex;
     justify-content: center;
     align-items: center;   
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .reviews h3{
@@ -282,17 +335,19 @@ aside {
 
 .reviews h2{
     margin-bottom: 40px;
+    line-height: 1;
 }
 
 /* ==========================================================================
    About Page
    ========================================================================== */
 
-   .mission .mission-content{
+   .mission {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
 
 
@@ -301,10 +356,11 @@ aside {
         justify-content: center;
         align-items: center;
         flex-flow: row wrap;
+        background-color: #2a423a;
     }
 
     .content-section{
-        margin: 0px;
+        margin: 0;
     }
 
 /* ==========================================================================
@@ -316,6 +372,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
 
    .faq .content-wrapper{
@@ -328,11 +385,12 @@ aside {
 
    .faq h2{
     margin-bottom: 40px;
+    line-height: 1;
    }
 
    .faq-content {
     margin-bottom: 50px;
-    flex-basis: auto;
+    /*flex-basis: auto; */
    }
 
 
