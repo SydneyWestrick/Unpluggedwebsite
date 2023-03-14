@@ -96,21 +96,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+
+   /* General Styles */
 
 html{
-
-    font-size: 16px;
+ font-size: 16px;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
 }
 ul,ol{
     list-style-type: none;
-    line-height: 30px;
+
 
 }
 
@@ -142,10 +143,13 @@ p{
 }
 
 img {
+    width: 100%;
 
 }
 
 figure{
+
+margin: 0;
 
 }
 address{
@@ -164,7 +168,7 @@ address{
    footer {
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     flex-flow: row wrap;
     background-color: #202322;
    }
@@ -212,6 +216,14 @@ address{
     font-size: 1.125em;
    }
 
+   header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
 
    footer{
     text-align: center;
@@ -247,16 +259,24 @@ address{
 
 /* hero area */ 
 
+.hero-area {
+    background: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
+    min-height: 500px;
+}
+
 .hero-area h1{
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25em;
+    line-height: 1.2;
     font-weight: 500;
+font-family: 'Poppins',Helvetica, Arial, sans-serif;
 }
-.hero-area{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
+
+
+
 
 /* Aside */
 
@@ -326,6 +346,15 @@ input [type=button] {
     align-items: center;   
     flex-flow: row wrap;
     background-color: #2a423a;
+}
+
+.reveiws figure {
+
+    background: url(img/.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
 }
 
 .reviews h3{
@@ -413,6 +442,14 @@ input [type=button] {
     display: flex;
     flex-basis: auto;
 
+}
+
+header figure{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
 }
 
 /*--------------------- Tablet style- About --------------------------*/
@@ -684,6 +721,7 @@ aside .content-wrapper .form{
 /* REVIEWS */
 
 .reviews .content-wrapper{
+
 
 
 }
