@@ -140,7 +140,8 @@
   }
    
   img {
-   width: 100%;
+   width: 20%;
+   
   }
    
   figure {
@@ -192,6 +193,7 @@
     height: 1px;
     width: 100%;
     margin: 10px 0 20px 0;
+   
   }
   
   header nav {
@@ -315,6 +317,7 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
   }
   
@@ -659,6 +662,26 @@
         line-height: 1.285;
     }
   
+    footer .social-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+
+     footer .social-icons p{
+      background-color: #527158;
+      border-radius:50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }   
+
+     footer .social-icons p i {
+      font-size: 1.3125em;
+    }
+
     footer .copyright {
       width: 100%;
     }
@@ -707,6 +730,26 @@
   
   
     }
+
+    footer .social-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+
+     footer .social-icons p{
+      background-color: #527158;
+      border-radius:50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }   
+
+     footer .social-icons p i {
+      font-size: 1.3125em;
+    }
     /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -729,6 +772,26 @@
         line-height: 1.125;
     }
   }
+
+  footer .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+
+   footer .social-icons p{
+    background-color: #527158;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }   
+
+   footer .social-icons p i {
+    font-size: 1.3125em;
+  }
   
   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
@@ -740,6 +803,8 @@
     .content-wrapper {
       max-width: 960px;
     }
+
+
   
     h2 {
       font-size: 2.25em;
@@ -802,6 +867,10 @@
     About Page
     ========================================================================== */
   
+    .map figure {
+      padding-bottom: 37.5%;
+    }
+  
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
@@ -811,23 +880,7 @@
     .contact-content h4 {
       font-size: 1.875em;
     }
-
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
   
-    .map-container iframe{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  
-  
-    }
   
     /* ==========================================================================
     FAQ Page
