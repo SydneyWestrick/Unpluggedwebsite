@@ -118,6 +118,7 @@
   a {
     color: #e2e3ed;
     text-decoration: none;
+
   }
    
   h2 {
@@ -140,7 +141,7 @@
   }
    
   img {
-   width: 20%;
+   width: 100%;
    
   }
    
@@ -168,7 +169,7 @@
     flex-flow: row wrap;
   }
   
-  header {
+ header {
     padding: 15px 0;
   }
   
@@ -179,6 +180,7 @@
     align-items: center;
     flex-flow: row wrap;
   }
+  
   
   header figure {
     width: 60%;
@@ -328,6 +330,7 @@
   .features article {
     width: 63%;
     margin: 30px 0;
+    flex-flow: row wrap;
   }
   
   .features .features-items {
@@ -637,6 +640,7 @@
       margin: 0;
     }
     /* Footer */
+
     footer .content-wrapper {
       width: 65%;
       margin: 100px 0;
@@ -651,6 +655,8 @@
   
     footer .contact {
       margin-bottom: 0;
+      /* width: 100%; */
+    
     }
   
     footer h4 {
@@ -789,6 +795,8 @@
     align-items: center;
    }   
 
+
+
    footer .social-icons p i {
     font-size: 1.3125em;
   }
@@ -802,6 +810,13 @@
   
     .content-wrapper {
       max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+
     }
 
 
@@ -847,7 +862,8 @@
     }
   
     .features article {
-      flex-basis: 33%;
+      flex-basis: 30%;
+
     }
     
     /* Reviews */
@@ -862,6 +878,15 @@
     footer h4 {
       font-size: 1.875em;
     }
+   
+    footer .content-wrapper{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+    }
+
   
     /* ==========================================================================
     About Page
