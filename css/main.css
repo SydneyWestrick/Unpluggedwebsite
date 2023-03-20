@@ -100,7 +100,7 @@
   /* General Styles */
    
   html {
-      font-size: 16px;
+    font-size: 16px;
   }
    
   body {
@@ -113,18 +113,20 @@
   ul, 
   ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
    
   a {
     color: #e2e3ed;
     text-decoration: none;
-
   }
    
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
+    margin: 0;
   }
    
   h3, 
@@ -142,7 +144,6 @@
    
   img {
    width: 100%;
-   
   }
    
   figure {
@@ -169,7 +170,7 @@
     flex-flow: row wrap;
   }
   
- header {
+  header {
     padding: 15px 0;
   }
   
@@ -180,7 +181,6 @@
     align-items: center;
     flex-flow: row wrap;
   }
-  
   
   header figure {
     width: 60%;
@@ -195,7 +195,6 @@
     height: 1px;
     width: 100%;
     margin: 10px 0 20px 0;
-   
   }
   
   header nav {
@@ -244,15 +243,22 @@
   }
   
   footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
+  footer .social-icons p i {
+    font-size: 1.3125em;
+  }
+  
   footer .copyright {
     margin: 20px 0;
   }
-  
   
   /* -------------------- Mobile Styles - Homepage -------------------- */
   
@@ -285,7 +291,7 @@
     flex-flow: row wrap;
   }
   
-  aside .form{
+  aside .form {
     margin-top: 30px;
   }
   
@@ -319,7 +325,6 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
   }
   
@@ -330,7 +335,6 @@
   .features article {
     width: 63%;
     margin: 30px 0;
-    flex-flow: row wrap;
   }
   
   .features .features-items {
@@ -338,6 +342,11 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+  
+  .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
   }
   
   .features p {
@@ -376,29 +385,28 @@
     flex-flow: row wrap;
   }
   
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  
   .contact-section {
     background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  }
-
-  .map-container {
-    position: relative;
-    padding-bottom: 125%;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .map-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-
   }
   
   .contact-content p {
@@ -577,7 +585,7 @@
     .hero-area {
       min-height: 600px;
     }
-  
+    
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -616,10 +624,10 @@
       width: 62%;
     }
   
-    .features i{
-      font-size: 3.75em;
-      margin-bottom: 40px;
+    .features i {
+      margin-bottom: 30px;
     }
+  
     /* Reviews */
     .reviews article {
       display: flex;
@@ -640,7 +648,6 @@
       margin: 0;
     }
     /* Footer */
-
     footer .content-wrapper {
       width: 65%;
       margin: 100px 0;
@@ -655,8 +662,6 @@
   
     footer .contact {
       margin-bottom: 0;
-      /* width: 100%; */
-    
     }
   
     footer h4 {
@@ -668,26 +673,11 @@
         line-height: 1.285;
     }
   
-    footer .social-icons{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        }
-
-     footer .social-icons p{
-      background-color: #527158;
-      border-radius:50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     }   
-
-     footer .social-icons p i {
-      font-size: 1.3125em;
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
     }
-
+    
     footer .copyright {
       width: 100%;
     }
@@ -707,6 +697,10 @@
       width: 45%;
     }
   
+    .map figure {
+      padding-bottom: 45.5%;
+    }
+  
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -720,42 +714,7 @@
     .contact-content h4 {
       font-size: 1.5em;
     }
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
   
-    .map-container iframe{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  
-  
-    }
-
-    footer .social-icons{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        }
-
-     footer .social-icons p{
-      background-color: #527158;
-      border-radius:50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     }   
-
-     footer .social-icons p i {
-      font-size: 1.3125em;
-    }
     /* ==========================================================================
      FAQ Page
      ========================================================================== */
@@ -778,28 +737,6 @@
         line-height: 1.125;
     }
   }
-
-  footer .social-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      }
-
-   footer .social-icons p{
-    background-color: #527158;
-    border-radius:50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }   
-
-
-
-   footer .social-icons p i {
-    font-size: 1.3125em;
-  }
   
   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
@@ -810,16 +747,7 @@
   
     .content-wrapper {
       max-width: 960px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;
-
     }
-
-
   
     h2 {
       font-size: 2.25em;
@@ -834,11 +762,12 @@
         font-size: 1.125em;
         line-height: 1.333;
     }
+  
     /* Hero */
     .hero-area h1 {
       font-size: 3.75em;
       width: 80%;
-  }
+    }
   
     /* Aside */
     aside .content-wrapper {
@@ -856,42 +785,31 @@
   
     /* Features */
   
-  
     .features h2 {
       width: 90%;
     }
   
     .features article {
-      flex-basis: 30%;
-
+      flex-basis: 33%;
     }
     
     /* Reviews */
+    
+    .reviews h2 {
+      padding-bottom: 50px; 
+    }
+    
     .reviews article div {
       width: 42%;
-    }
-  
-    .reviews h2 {
-      padding-bottom: 50px;
     }
   
     footer h4 {
       font-size: 1.875em;
     }
-   
-    footer .content-wrapper{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-    }
-
   
     /* ==========================================================================
     About Page
     ========================================================================== */
-  
     .map figure {
       padding-bottom: 37.5%;
     }
@@ -905,7 +823,6 @@
     .contact-content h4 {
       font-size: 1.875em;
     }
-  
   
     /* ==========================================================================
     FAQ Page
