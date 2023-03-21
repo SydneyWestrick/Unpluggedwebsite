@@ -166,6 +166,13 @@
   .content-wrapper {
     width: 100%;
     margin: 50px 0;
+    display: flex;
+    /* background-color: #527158; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
     /* background-color: #527158; */
   }
   
