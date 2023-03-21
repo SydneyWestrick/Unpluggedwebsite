@@ -127,8 +127,6 @@
     font-weight: 500;
     font-size: 1.875em;
     margin: 0;
-    padding-top: 30px;
-    padding-left: 30px;
   }
    
   h3, 
@@ -137,22 +135,16 @@
     font-weight: 500;
     font-size: 1.125em;
     margin: 20px 0;
-    padding: 0 30px;
   }
    
-  .contact-content p{
-
-    margin: 0;
-    padding: 20px 30px;
-  }
   p {
     font-size: .875em;
     line-height: 1.285;
-    padding: 0 20px;
   }
    
   img {
    width: 100%;
+   padding-top: 20px;
   }
    
   figure {
@@ -164,16 +156,8 @@
   }
    
   .content-wrapper {
-    width: 100%;
+    width: 90%;
     margin: 50px 0;
-    display: flex;
-    /* background-color: #527158; */
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #527158; */
   }
   
   /* -------------------- Base Header - Footer Styles -------------------- */
@@ -394,48 +378,41 @@
      About Page
      ========================================================================== */
   
-     .mission {
-      background-color: #527158;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-      margin: 0;
-    }
-    
-    .map figure {
-      width: 100%;
-      height: 0; 
-      padding-bottom: 125%; 
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .map iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-    }
-    
-    .contact-section {
-      background-color: #2a423a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-    }
-    .contact .content-wrapper{
-
-      background-color: #527158;
-      margin: 0;
-    }
-    
-    .contact-content p {
-      margin: 0;
-      padding: 20px 20px;
-    }
+  .mission {
+    background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  
+  .contact-section {
+    background-color: #2a423a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .contact-content p {
+    margin: 0;
+  }
   
   /* ==========================================================================
      FAQ Page
@@ -565,13 +542,15 @@
     /* General styles */
     .content-wrapper {
       max-width: 640px;
-      /* margin: 4px 0; */
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: space-around;
-      align-items: center;
+      margin: 100px 0;
+      margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    }
         
     h2 {
       font-size: 2.25em;
@@ -674,7 +653,9 @@
   
     .reviews h3 {
       width: 75%;
-      margin: 0;
+    /* margin: 0; */
+    padding-top: 30px;
+    padding-bottom: 30px;
     }
     /* Footer */
     footer .content-wrapper {
@@ -703,8 +684,8 @@
     }
   
     footer .social-icons {
-      idth: 1.25em;
-    justify-content: space-between;
+      width: 12.5em;
+      justify-content: space-between;
     }
     
     footer .copyright {
@@ -736,13 +717,8 @@
   
     .contact-content {
       display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    }
-
-    .contact .content-wrapper{
-      margin:0;
-      max-width:100%;
+      justify-content: space-between;
+      align-items: flex-start;
     }
   
     .contact-content h4 {
@@ -779,21 +755,18 @@
       padding: 15px 0;
     }
   
-    .contact .content-wrapper {
-      max-width: 100%;
+    .content-wrapper {
+      max-width: 960px;
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 0;
-      background-color: #2a423a;
-      align-content: center;
-      justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
     }
   
     h2 {
       font-size: 2.25em;
-      padding: 30px 100px;
-    
     }
   
     h3,
@@ -848,10 +821,6 @@
   
     footer h4 {
       font-size: 1.875em;
-    }
-
-    footer .contact{
-      padding: 0 400px 0 0;
     }
   
     /* ==========================================================================
